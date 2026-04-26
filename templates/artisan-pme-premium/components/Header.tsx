@@ -8,6 +8,7 @@ import { SITE_CONFIG } from "@/lib/schema";
 
 const NAV_LINKS = [
   { label: "Services", href: "#services" },
+  { label: "Réalisations", href: "/galerie" },
   { label: "À propos", href: "#about" },
   { label: "Avis clients", href: "#testimonials" },
   { label: "Contact", href: "#contact" },
@@ -25,8 +26,11 @@ export default function Header() {
 
   const handleNavClick = (href: string) => {
     setMobileOpen(false);
-    const el = document.querySelector(href);
-    el?.scrollIntoView({ behavior: "smooth" });
+    if (href.startsWith("#")) {
+      document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
+    } else {
+      window.location.href = href;
+    }
   };
 
   return (

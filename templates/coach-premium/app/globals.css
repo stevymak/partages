@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+  body { @apply bg-white text-slate-800; }
+  ::selection { @apply bg-rose-500 text-white; }
+}
+
+@layer components {
+  .btn-coach {
+    @apply inline-flex items-center gap-2 rounded-full bg-coach-gradient px-7 py-3.5 text-sm font-bold text-white shadow-lg shadow-rose-600/30 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-xl active:translate-y-0;
+  }
+  .btn-coach-outline {
+    @apply inline-flex items-center gap-2 rounded-full border-2 border-rose-500 px-7 py-3.5 text-sm font-bold text-rose-600 transition-all duration-200 hover:bg-rose-50 hover:-translate-y-0.5;
+  }
+  .card-coach {
+    @apply rounded-3xl border border-slate-100 bg-white p-8 shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+  }
+}
