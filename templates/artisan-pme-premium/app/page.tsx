@@ -3,7 +3,8 @@ import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import About from "@/components/About";
 import Testimonials from "@/components/Testimonials";
-import FAQ, { FAQ_ITEMS } from "@/components/FAQ";
+import FAQ from "@/components/FAQ";
+import { FAQ_ITEMS } from "@/lib/faq-data";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 

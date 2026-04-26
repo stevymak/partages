@@ -1,0 +1,24 @@
+# Dependencies
+**/node_modules/
+
+# Next.js build output
+**/.next/
+**/out/
+
+# Lock files (optional — retirer si tu veux les versionner)
+**/package-lock.json
+
+# Next.js type declarations (auto-générés)
+**/next-env.d.ts
+
+# Previews screenshots (local only)
+previews/
+
+# Env files
+**/.env
+**/.env.local
+**/.env*.local
+
+# OS
+.DS_Store
+Thumbs.db
